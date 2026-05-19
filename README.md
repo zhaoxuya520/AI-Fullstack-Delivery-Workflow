@@ -117,37 +117,45 @@ AI 首次进入本工作流时，按以下步骤自动配置：
    ↓
 2. 读取 RULES.md → 加载全局硬规则
    ↓
-3. 接收用户任务输入
+3. 读取 PERSONA.md → 加载角色人格 + 互动协议（活人感）
    ↓
-4. 检查输入完整性 → 缺关键信息先补问（不要猜）
+4. 接收用户任务输入
    ↓
-5. 读取 routing.md → 按关键词/意图/产物匹配目标工作流
+5. 检查输入完整性 → 缺关键信息先补问（不要猜）
    ↓
-6. 检查 field-journal/_index.md → 是否有同类经验可复用
+6. 读取 routing.md → 按关键词/意图/产物匹配目标工作流
    ↓
-7. 进入对应 workflows/<role>/WORKFLOW.md → 读取该角色完整流程
+7. 【角色报到】用第一人称宣布谁来干活
    ↓
-8. 读取该工作流 tool-index.json → 确认工具可用
+8. 检查 field-journal/_index.md → 是否有同类经验可复用
    ↓
-9. 缺工具 → 调用 bootstrap-project.ps1 自动补齐
+9. 进入对应 workflows/<role>/WORKFLOW.md → 读取该角色完整流程
    ↓
-10. 如自动补齐失败（2次）→ 输出结构化手动安装引导，等用户确认
+10. 读取该工作流 tool-index.json → 确认工具可用
     ↓
-11. 读取 skills/routing.md → 路由到具体 skill 模块
+11. 缺工具 → 调用 bootstrap-project.ps1 自动补齐
     ↓
-12. 加载对应 SKILL.md + references/ → 获取方法论 + 工具命令 + 代码范式
+12. 如自动补齐失败（2次）→ 输出结构化手动安装引导，等用户确认
     ↓
-13. 执行任务（设计/编码/测试/部署/分析/文档）
+13. 读取 skills/routing.md → 路由到具体 skill 模块
     ↓
-14. 执行中遇到困难 → 换路径（不死磕一条路）
+14. 加载对应 SKILL.md + references/ → 获取方法论 + 工具命令 + 代码范式
     ↓
-15. 执行中持续向用户汇报进展
+15. 执行任务（设计/编码/测试/部署/分析/文档）
     ↓
-16. 任务完成 → 按 templates/delivery-acceptance-criteria.md 验收
+16. 执行中遇到困难 → 换路径（不死磕一条路）
     ↓
-17. 按 EVOLUTION.md 自进化检查
+17. 执行中持续向用户汇报进展（口语化，带角色感）
     ↓
-18. 回写 field-journal（脱敏），更新 routing/tool-index/pitfalls（如需）
+18. 需要其他角色配合时 → @对方 + 说明需要什么
+    ↓
+19. 任务完成 → 按 templates/delivery-acceptance-criteria.md 验收
+    ↓
+20. 【完成报告】口语化总结做了什么，@下一个角色（如有）
+    ↓
+21. 按 EVOLUTION.md 自进化检查
+    ↓
+22. 回写 field-journal（脱敏），更新 routing/tool-index/pitfalls（如需）
 ```
 
 ---
@@ -221,6 +229,7 @@ AI 功能集成：
 - [WORKFLOW.md](WORKFLOW.md) — 完整项目生命周期
 - [routing.md](routing.md) — 总控路由规则
 - [RULES.md](RULES.md) — 全局执行规则
+- [PERSONA.md](PERSONA.md) — 角色人格 + 团队互动协议（活人感）
 - [EVOLUTION.md](EVOLUTION.md) — 全局自进化协议
 - [workflow-map.md](workflow-map.md) — 工作流协作图
 - [tool-index.md](tool-index.md) — 工具索引
