@@ -1,0 +1,44 @@
+{
+  "version": "1.0.0",
+  "workflow": "project-manager",
+  "last_updated": "2026-05-19",
+  "categories": {
+    "project_management": {
+      "description": "项目管理平台",
+      "tools": [
+        { "name": "Linear", "docs": "https://linear.app", "use_case": "现代项目管理(首选)" },
+        { "name": "Jira", "docs": "https://atlassian.com/software/jira", "use_case": "企业级(复杂流程)" },
+        { "name": "GitHub Projects", "use_case": "GitHub内置看板" },
+        { "name": "飞书项目", "use_case": "国内团队" },
+        { "name": "Notion", "use_case": "灵活项目管理" },
+        { "name": "Shortcut", "use_case": "中型团队" }
+      ]
+    },
+    "communication": {
+      "description": "团队沟通",
+      "tools": [
+        { "name": "Slack", "use_case": "团队即时通讯" },
+        { "name": "飞书", "use_case": "国内团队(首选)" },
+        { "name": "企业微信", "use_case": "微信生态" },
+        { "name": "Discord", "use_case": "开源/社区项目" }
+      ]
+    },
+    "diagram": {
+      "description": "图表工具",
+      "tools": [
+        { "name": "Mermaid", "use_case": "代码画图(Markdown内)" },
+        { "name": "Excalidraw", "use_case": "手绘风格白板" },
+        { "name": "draw.io", "use_case": "免费流程图" },
+        { "name": "Whimsical", "use_case": "流程图+思维导图" }
+      ]
+    },
+    "estimation": {
+      "description": "估算工具",
+      "tools": [
+        { "name": "Planning Poker", "use_case": "敏捷估点" },
+        { "name": "T-shirt sizing", "use_case": "粗估(S/M/L/XL)" },
+        { "name": "Gantt (Notion/Jira)", "use_case": "甘特图排期" }
+      ]
+    }
+  }
+}

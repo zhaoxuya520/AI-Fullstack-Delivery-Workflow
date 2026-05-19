@@ -1,0 +1,114 @@
+{
+  "version": "1.0.0",
+  "description": "AI 全栈交付工作流工具清单。bootstrap-project.ps1 读取此文件自动安装。",
+  "workflows": [
+    {
+      "name": "frontend-engineer",
+      "display_name": "前端工程师工作流",
+      "tools": [
+        { "name": "Node.js", "check_cmd": "node", "install_cmd": "winget install OpenJS.NodeJS.LTS", "category": "runtime", "required": true },
+        { "name": "pnpm", "check_cmd": "pnpm", "install_cmd": "npm install -g pnpm", "category": "package-manager", "required": true },
+        { "name": "Vite", "check_cmd": "vite", "install_cmd": "pnpm add -g vite", "category": "build", "required": false },
+        { "name": "TypeScript", "check_cmd": "tsc", "install_cmd": "pnpm add -g typescript", "category": "language", "required": true },
+        { "name": "ESLint", "check_cmd": "eslint", "install_cmd": "pnpm add -g eslint", "category": "lint", "required": true },
+        { "name": "Prettier", "check_cmd": "prettier", "install_cmd": "pnpm add -g prettier", "category": "format", "required": true },
+        { "name": "Playwright", "check_cmd": "playwright", "install_cmd": "pnpm add -g playwright && npx playwright install", "category": "test", "required": false }
+      ]
+    },
+    {
+      "name": "backend-engineer",
+      "display_name": "后端工程师工作流",
+      "tools": [
+        { "name": "Java (JDK 17+)", "check_cmd": "java", "install_cmd": "winget install Microsoft.OpenJDK.17", "category": "runtime", "required": true },
+        { "name": "Maven", "check_cmd": "mvn", "install_cmd": "winget install Apache.Maven", "category": "build", "required": true },
+        { "name": "Gradle", "check_cmd": "gradle", "install_cmd": "winget install Gradle.Gradle", "category": "build", "required": false },
+        { "name": "Node.js", "check_cmd": "node", "install_cmd": "winget install OpenJS.NodeJS.LTS", "category": "runtime", "required": false },
+        { "name": "Python", "check_cmd": "python", "install_cmd": "winget install Python.Python.3.12", "category": "runtime", "required": false },
+        { "name": "Docker", "check_cmd": "docker", "install_cmd": "winget install Docker.DockerDesktop", "category": "container", "required": false }
+      ]
+    },
+    {
+      "name": "database-engineer",
+      "display_name": "数据库工程师工作流",
+      "tools": [
+        { "name": "PostgreSQL (psql)", "check_cmd": "psql", "install_cmd": "winget install PostgreSQL.PostgreSQL", "category": "database", "required": true },
+        { "name": "MySQL (mysql)", "check_cmd": "mysql", "install_cmd": "winget install Oracle.MySQL", "category": "database", "required": false },
+        { "name": "Redis (redis-cli)", "check_cmd": "redis-cli", "install_cmd": "winget install Redis.Redis", "category": "cache", "required": false },
+        { "name": "DBeaver", "check_cmd": "dbeaver", "install_cmd": "winget install dbeaver.dbeaver", "category": "gui", "required": false }
+      ]
+    },
+    {
+      "name": "devops-engineer",
+      "display_name": "DevOps 工程师工作流",
+      "tools": [
+        { "name": "Docker", "check_cmd": "docker", "install_cmd": "winget install Docker.DockerDesktop", "category": "container", "required": true },
+        { "name": "docker-compose", "check_cmd": "docker-compose", "install_cmd": "docker已内置compose", "category": "container", "required": true },
+        { "name": "Nginx", "check_cmd": "nginx", "install_cmd": "winget install Nginx.Nginx", "category": "server", "required": false },
+        { "name": "GitHub CLI", "check_cmd": "gh", "install_cmd": "winget install GitHub.cli", "category": "ci", "required": false },
+        { "name": "Terraform", "check_cmd": "terraform", "install_cmd": "winget install Hashicorp.Terraform", "category": "iac", "required": false }
+      ]
+    },
+    {
+      "name": "automation-qa",
+      "display_name": "自动化测试工作流",
+      "tools": [
+        { "name": "Node.js", "check_cmd": "node", "install_cmd": "winget install OpenJS.NodeJS.LTS", "category": "runtime", "required": true },
+        { "name": "Playwright", "check_cmd": "playwright", "install_cmd": "pnpm add -g playwright && npx playwright install", "category": "e2e", "required": true },
+        { "name": "Vitest", "check_cmd": "vitest", "install_cmd": "pnpm add -g vitest", "category": "unit-test", "required": true },
+        { "name": "Jest", "check_cmd": "jest", "install_cmd": "pnpm add -g jest", "category": "unit-test", "required": false },
+        { "name": "k6", "check_cmd": "k6", "install_cmd": "winget install Grafana.k6", "category": "perf", "required": false }
+      ]
+    },
+    {
+      "name": "api-designer",
+      "display_name": "API 设计工作流",
+      "tools": [
+        { "name": "Node.js", "check_cmd": "node", "install_cmd": "winget install OpenJS.NodeJS.LTS", "category": "runtime", "required": true },
+        { "name": "Spectral (OpenAPI lint)", "check_cmd": "spectral", "install_cmd": "pnpm add -g @stoplight/spectral-cli", "category": "lint", "required": true },
+        { "name": "Prism (Mock Server)", "check_cmd": "prism", "install_cmd": "pnpm add -g @stoplight/prism-cli", "category": "mock", "required": true },
+        { "name": "httpie", "check_cmd": "http", "install_cmd": "pip install httpie", "category": "http", "required": false }
+      ]
+    },
+    {
+      "name": "security-engineer",
+      "display_name": "安全工程师工作流",
+      "tools": [
+        { "name": "Node.js", "check_cmd": "node", "install_cmd": "winget install OpenJS.NodeJS.LTS", "category": "runtime", "required": true },
+        { "name": "npm-audit", "check_cmd": "npm", "install_cmd": "已随Node.js安装", "category": "sca", "required": true },
+        { "name": "Snyk", "check_cmd": "snyk", "install_cmd": "pnpm add -g snyk", "category": "sca", "required": false },
+        { "name": "OWASP ZAP", "check_cmd": "zap-cli", "install_cmd": "pip install zapcli", "category": "dast", "required": false },
+        { "name": "trivy", "check_cmd": "trivy", "install_cmd": "winget install AquaSecurity.Trivy", "category": "container-scan", "required": false }
+      ]
+    },
+    {
+      "name": "sre-operations",
+      "display_name": "SRE/运维工作流",
+      "tools": [
+        { "name": "Docker", "check_cmd": "docker", "install_cmd": "winget install Docker.DockerDesktop", "category": "container", "required": true },
+        { "name": "curl", "check_cmd": "curl", "install_cmd": "已随系统安装", "category": "http", "required": true },
+        { "name": "jq", "check_cmd": "jq", "install_cmd": "winget install jqlang.jq", "category": "json", "required": true },
+        { "name": "k9s", "check_cmd": "k9s", "install_cmd": "winget install Derailed.k9s", "category": "k8s", "required": false }
+      ]
+    },
+    {
+      "name": "ai-ml-engineer",
+      "display_name": "AI 集成工程师工作流",
+      "tools": [
+        { "name": "Node.js", "check_cmd": "node", "install_cmd": "winget install OpenJS.NodeJS.LTS", "category": "runtime", "required": true },
+        { "name": "Python", "check_cmd": "python", "install_cmd": "winget install Python.Python.3.12", "category": "runtime", "required": true },
+        { "name": "pip", "check_cmd": "pip", "install_cmd": "已随Python安装", "category": "package-manager", "required": true },
+        { "name": "openai (SDK)", "check_cmd": "python -c \"import openai\"", "install_cmd": "pip install openai", "category": "sdk", "required": false },
+        { "name": "langchain", "check_cmd": "python -c \"import langchain\"", "install_cmd": "pip install langchain", "category": "framework", "required": false }
+      ]
+    },
+    {
+      "name": "data-analyst",
+      "display_name": "数据分析工作流",
+      "tools": [
+        { "name": "Python", "check_cmd": "python", "install_cmd": "winget install Python.Python.3.12", "category": "runtime", "required": true },
+        { "name": "pandas", "check_cmd": "python -c \"import pandas\"", "install_cmd": "pip install pandas", "category": "data", "required": true },
+        { "name": "Jupyter", "check_cmd": "jupyter", "install_cmd": "pip install jupyterlab", "category": "notebook", "required": false }
+      ]
+    }
+  ]
+}

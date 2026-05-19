@@ -1,0 +1,52 @@
+{
+  "version": "1.0.0",
+  "workflow": "api-designer",
+  "last_updated": "2026-05-19",
+  "categories": {
+    "spec": {
+      "description": "API规范",
+      "tools": [
+        { "name": "OpenAPI 3.1", "docs": "https://spec.openapis.org/oas/v3.1.0", "use_case": "REST API规范(标准)" },
+        { "name": "AsyncAPI", "docs": "https://asyncapi.com", "use_case": "事件驱动API规范" },
+        { "name": "GraphQL SDL", "docs": "https://graphql.org", "use_case": "GraphQL Schema" },
+        { "name": "JSON Schema", "docs": "https://json-schema.org", "use_case": "数据模型定义" }
+      ]
+    },
+    "lint": {
+      "description": "API校验",
+      "tools": [
+        { "name": "Spectral", "check_cmd": "spectral", "npm": "@stoplight/spectral-cli", "use_case": "OpenAPI Lint(首选)" },
+        { "name": "Redocly CLI", "check_cmd": "redocly", "npm": "@redocly/cli", "use_case": "OpenAPI Lint+Bundle" },
+        { "name": "openapi-generator", "use_case": "代码生成" }
+      ]
+    },
+    "mock": {
+      "description": "Mock服务",
+      "tools": [
+        { "name": "Prism", "check_cmd": "prism", "npm": "@stoplight/prism-cli", "use_case": "OpenAPI Mock Server(首选)" },
+        { "name": "MSW", "npm": "msw", "use_case": "浏览器/Node Mock" },
+        { "name": "WireMock", "use_case": "Java生态Mock" },
+        { "name": "json-server", "npm": "json-server", "use_case": "快速REST Mock" }
+      ]
+    },
+    "documentation": {
+      "description": "API文档",
+      "tools": [
+        { "name": "Swagger UI", "use_case": "交互式API文档" },
+        { "name": "Redoc", "use_case": "美观API文档" },
+        { "name": "Stoplight", "docs": "https://stoplight.io", "use_case": "API设计平台" },
+        { "name": "Knife4j", "use_case": "增强Swagger(国内Java)" }
+      ]
+    },
+    "testing": {
+      "description": "API测试",
+      "tools": [
+        { "name": "Postman", "check_cmd": "postman", "use_case": "API调试+自动化" },
+        { "name": "Insomnia", "use_case": "轻量API调试" },
+        { "name": "httpie", "check_cmd": "http", "use_case": "命令行HTTP" },
+        { "name": "curl", "check_cmd": "curl", "use_case": "最基础HTTP" },
+        { "name": "Pact", "use_case": "契约测试" }
+      ]
+    }
+  }
+}

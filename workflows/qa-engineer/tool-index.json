@@ -1,0 +1,60 @@
+{
+  "version": "1.0.0",
+  "workflow": "qa-engineer",
+  "last_updated": "2026-05-19",
+  "categories": {
+    "test_management": {
+      "description": "测试管理",
+      "tools": [
+        { "name": "TestRail", "use_case": "测试用例管理平台" },
+        { "name": "Zephyr", "use_case": "Jira集成测试管理" },
+        { "name": "qase.io", "use_case": "现代测试管理" },
+        { "name": "Notion/飞书", "use_case": "轻量级测试文档" }
+      ]
+    },
+    "bug_tracking": {
+      "description": "缺陷管理",
+      "tools": [
+        { "name": "Jira", "use_case": "企业级缺陷管理" },
+        { "name": "Linear", "use_case": "现代项目管理" },
+        { "name": "GitHub Issues", "use_case": "GitHub项目" },
+        { "name": "禅道", "use_case": "国内项目管理" }
+      ]
+    },
+    "browser_testing": {
+      "description": "浏览器测试",
+      "tools": [
+        { "name": "BrowserStack", "use_case": "真机跨浏览器" },
+        { "name": "LambdaTest", "use_case": "云浏览器测试" },
+        { "name": "Chrome DevTools", "use_case": "本地调试" },
+        { "name": "Responsively App", "use_case": "响应式同步预览" }
+      ]
+    },
+    "mobile_testing": {
+      "description": "移动端测试",
+      "tools": [
+        { "name": "Appium", "use_case": "跨平台移动自动化" },
+        { "name": "XCUITest", "use_case": "iOS原生测试" },
+        { "name": "Espresso", "use_case": "Android原生测试" },
+        { "name": "Detox", "use_case": "React Native E2E" }
+      ]
+    },
+    "accessibility": {
+      "description": "无障碍测试",
+      "tools": [
+        { "name": "axe DevTools", "use_case": "浏览器a11y扫描" },
+        { "name": "Lighthouse", "use_case": "性能+a11y审计" },
+        { "name": "NVDA/VoiceOver", "use_case": "屏幕阅读器实测" },
+        { "name": "Pa11y", "npm": "pa11y", "use_case": "CLI a11y扫描" }
+      ]
+    },
+    "api_testing": {
+      "description": "API测试",
+      "tools": [
+        { "name": "Postman", "use_case": "API调试+自动化" },
+        { "name": "Insomnia", "use_case": "轻量API调试" },
+        { "name": "httpie", "check_cmd": "http", "use_case": "命令行HTTP" }
+      ]
+    }
+  }
+}

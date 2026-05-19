@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(python \"F:\\\\AI Full-stack Delivery Workflow\\\\scripts\\\\audit-workflows.py\")",
+      "PowerShell($env:PYTHONIOENCODING='utf-8'; python \"F:\\\\AI Full-stack Delivery Workflow\\\\scripts\\\\audit-workflows.py\")",
+      "PowerShell(Test-Path *)",
+      "PowerShell(Join-Path *)",
+      "PowerShell(python \"scripts/audit-workflows.py\")",
+      "PowerShell($env:PYTHONIOENCODING = 'utf-8'; python \"scripts/audit-workflows.py\")",
+      "PowerShell($i=0; Get-Content \"F:\\\\AI Full-stack Delivery Workflow\\\\scripts\\\\standardize-workflows.ps1\" | ForEach-Object { $i++; if\\($_ -match '@\"|\"@|@''|''@|`'\\){ '{0}:{1}' -f $i, $_ } })",
+      "PowerShell(New-Item *)",
+      "PowerShell(powershell -NoProfile -ExecutionPolicy Bypass -File \"scripts\\\\standardize-workflows.ps1\")",
+      "PowerShell(python \"scripts\\\\audit-workflows.py\")"
+    ]
+  }
+}

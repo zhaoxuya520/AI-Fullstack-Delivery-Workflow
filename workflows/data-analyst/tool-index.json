@@ -1,0 +1,65 @@
+{
+  "version": "1.0.0",
+  "workflow": "data-analyst",
+  "last_updated": "2026-05-19",
+  "categories": {
+    "query": {
+      "description": "数据查询",
+      "tools": [
+        { "name": "SQL (PostgreSQL/MySQL)", "use_case": "结构化数据查询" },
+        { "name": "DBeaver", "check_cmd": "dbeaver", "use_case": "SQL GUI(首选)" },
+        { "name": "DataGrip", "use_case": "JetBrains SQL IDE" },
+        { "name": "BigQuery", "use_case": "Google云数据仓库" },
+        { "name": "ClickHouse", "use_case": "OLAP分析引擎" }
+      ]
+    },
+    "python_data": {
+      "description": "Python数据处理",
+      "tools": [
+        { "name": "pandas", "pip": "pandas", "use_case": "数据处理(标准)" },
+        { "name": "Polars", "pip": "polars", "use_case": "高性能DataFrame" },
+        { "name": "NumPy", "pip": "numpy", "use_case": "数值计算" },
+        { "name": "scipy", "pip": "scipy", "use_case": "统计分析" }
+      ]
+    },
+    "visualization": {
+      "description": "数据可视化",
+      "tools": [
+        { "name": "Apache ECharts", "npm": "echarts", "use_case": "交互式图表(国内首选)" },
+        { "name": "Matplotlib", "pip": "matplotlib", "use_case": "Python静态图" },
+        { "name": "Seaborn", "pip": "seaborn", "use_case": "统计图(美观)" },
+        { "name": "Plotly", "pip": "plotly", "use_case": "交互式图表" },
+        { "name": "Grafana", "use_case": "监控面板" },
+        { "name": "Metabase", "use_case": "BI平台(轻量)" },
+        { "name": "Superset", "use_case": "BI平台(重量)" }
+      ]
+    },
+    "notebook": {
+      "description": "交互式环境",
+      "tools": [
+        { "name": "JupyterLab", "pip": "jupyterlab", "use_case": "数据分析Notebook" },
+        { "name": "Google Colab", "use_case": "云端Notebook" },
+        { "name": "Streamlit", "pip": "streamlit", "use_case": "数据App" },
+        { "name": "Gradio", "pip": "gradio", "use_case": "ML Demo App" }
+      ]
+    },
+    "ab_testing": {
+      "description": "A/B测试",
+      "tools": [
+        { "name": "statsmodels", "pip": "statsmodels", "use_case": "统计检验" },
+        { "name": "scipy.stats", "use_case": "假设检验" },
+        { "name": "GrowthBook", "use_case": "A/B测试平台" },
+        { "name": "Optimizely", "use_case": "企业A/B测试" }
+      ]
+    },
+    "etl": {
+      "description": "数据管道",
+      "tools": [
+        { "name": "dbt", "check_cmd": "dbt", "use_case": "数据转换(首选)" },
+        { "name": "Airflow", "use_case": "工作流调度" },
+        { "name": "Prefect", "pip": "prefect", "use_case": "现代数据管道" },
+        { "name": "Dagster", "pip": "dagster", "use_case": "数据资产管理" }
+      ]
+    }
+  }
+}

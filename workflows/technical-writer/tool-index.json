@@ -1,0 +1,55 @@
+{
+  "version": "1.0.0",
+  "workflow": "technical-writer",
+  "last_updated": "2026-05-19",
+  "categories": {
+    "documentation": {
+      "description": "文档平台",
+      "tools": [
+        { "name": "Notion", "use_case": "团队知识库(首选)" },
+        { "name": "GitBook", "docs": "https://gitbook.com", "use_case": "开发者文档" },
+        { "name": "Docusaurus", "npm": "@docusaurus/core", "use_case": "React文档站" },
+        { "name": "VitePress", "npm": "vitepress", "use_case": "Vue文档站(首选)" },
+        { "name": "Nextra", "npm": "nextra", "use_case": "Next.js文档站" },
+        { "name": "MkDocs", "pip": "mkdocs", "use_case": "Python文档站" },
+        { "name": "Starlight", "npm": "@astrojs/starlight", "use_case": "Astro文档站" }
+      ]
+    },
+    "api_docs": {
+      "description": "API文档",
+      "tools": [
+        { "name": "Swagger UI", "use_case": "OpenAPI交互文档" },
+        { "name": "Redoc", "use_case": "美观API文档" },
+        { "name": "Stoplight", "use_case": "API设计+文档平台" },
+        { "name": "Slate", "use_case": "三栏API文档" }
+      ]
+    },
+    "diagram": {
+      "description": "图表工具",
+      "tools": [
+        { "name": "Mermaid", "use_case": "代码画图(Markdown内嵌)" },
+        { "name": "PlantUML", "use_case": "UML图" },
+        { "name": "draw.io/diagrams.net", "use_case": "流程图" },
+        { "name": "Excalidraw", "use_case": "手绘风格" },
+        { "name": "D2", "check_cmd": "d2", "use_case": "声明式图表" }
+      ]
+    },
+    "writing": {
+      "description": "写作工具",
+      "tools": [
+        { "name": "Markdown", "use_case": "技术文档标准格式" },
+        { "name": "MDX", "use_case": "Markdown+JSX组件" },
+        { "name": "Vale", "check_cmd": "vale", "use_case": "文档风格Lint" },
+        { "name": "markdownlint", "npm": "markdownlint-cli2", "use_case": "Markdown格式检查" }
+      ]
+    },
+    "changelog": {
+      "description": "变更管理",
+      "tools": [
+        { "name": "Changesets", "npm": "@changesets/cli", "use_case": "Monorepo变更管理" },
+        { "name": "conventional-changelog", "npm": "conventional-changelog-cli", "use_case": "自动CHANGELOG" },
+        { "name": "Release Please", "use_case": "Google自动发版" }
+      ]
+    }
+  }
+}

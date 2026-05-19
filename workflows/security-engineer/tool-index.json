@@ -1,0 +1,62 @@
+{
+  "version": "1.0.0",
+  "workflow": "security-engineer",
+  "last_updated": "2026-05-19",
+  "categories": {
+    "sca": {
+      "description": "依赖安全扫描(SCA)",
+      "tools": [
+        { "name": "npm audit", "check_cmd": "npm", "use_case": "Node依赖扫描(内置)" },
+        { "name": "Snyk", "check_cmd": "snyk", "npm": "snyk", "use_case": "多语言SCA(首选)" },
+        { "name": "Trivy", "check_cmd": "trivy", "use_case": "容器+依赖+IaC扫描" },
+        { "name": "OWASP Dependency-Check", "use_case": "Java依赖扫描" },
+        { "name": "Safety", "pip": "safety", "use_case": "Python依赖扫描" },
+        { "name": "Renovate/Dependabot", "use_case": "自动升级依赖" }
+      ]
+    },
+    "sast": {
+      "description": "静态代码安全扫描(SAST)",
+      "tools": [
+        { "name": "Semgrep", "check_cmd": "semgrep", "use_case": "多语言SAST(首选)" },
+        { "name": "SonarQube", "use_case": "代码质量+安全" },
+        { "name": "CodeQL", "use_case": "GitHub高级安全" },
+        { "name": "ESLint Security Plugins", "use_case": "JS/TS安全Lint" },
+        { "name": "Bandit", "pip": "bandit", "use_case": "Python安全Lint" },
+        { "name": "SpotBugs + FindSecBugs", "use_case": "Java安全" }
+      ]
+    },
+    "dast": {
+      "description": "动态安全扫描(DAST)",
+      "tools": [
+        { "name": "OWASP ZAP", "check_cmd": "zap-cli", "use_case": "Web DAST(免费首选)" },
+        { "name": "Burp Suite", "use_case": "Web安全代理(专业)" },
+        { "name": "Nuclei", "check_cmd": "nuclei", "use_case": "模板化漏洞扫描" }
+      ]
+    },
+    "secret_scan": {
+      "description": "密钥泄露检测",
+      "tools": [
+        { "name": "Gitleaks", "check_cmd": "gitleaks", "use_case": "Git历史密钥扫描(首选)" },
+        { "name": "TruffleHog", "use_case": "深度密钥搜索" },
+        { "name": "detect-secrets", "pip": "detect-secrets", "use_case": "预提交检测" }
+      ]
+    },
+    "container_security": {
+      "description": "容器安全",
+      "tools": [
+        { "name": "Trivy", "check_cmd": "trivy", "use_case": "镜像漏洞扫描(首选)" },
+        { "name": "Grype", "check_cmd": "grype", "use_case": "镜像漏洞扫描" },
+        { "name": "Docker Scout", "use_case": "Docker官方扫描" },
+        { "name": "Falco", "use_case": "运行时威胁检测" }
+      ]
+    },
+    "compliance": {
+      "description": "合规审计",
+      "tools": [
+        { "name": "OWASP Top 10", "docs": "https://owasp.org/Top10", "use_case": "Web安全标准" },
+        { "name": "CIS Benchmarks", "use_case": "配置安全基准" },
+        { "name": "NIST CSF", "use_case": "安全框架" }
+      ]
+    }
+  }
+}

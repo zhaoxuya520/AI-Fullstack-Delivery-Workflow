@@ -1,0 +1,91 @@
+{
+  "version": "1.0.0",
+  "workflow": "backend-engineer",
+  "last_updated": "2026-05-19",
+  "categories": {
+    "framework": {
+      "description": "后端框架",
+      "tools": [
+        { "name": "Spring Boot", "version": "3.3+", "language": "Java/Kotlin", "package": "org.springframework.boot", "docs": "https://spring.io/projects/spring-boot", "use_case": "企业级Java后端(首选)" },
+        { "name": "Spring Cloud", "version": "2024.x", "language": "Java", "package": "org.springframework.cloud", "use_case": "微服务架构" },
+        { "name": "Express.js", "version": "4.x/5.x", "language": "Node.js", "npm": "express", "docs": "https://expressjs.com", "use_case": "轻量Node后端" },
+        { "name": "NestJS", "version": "10.x", "language": "Node.js/TS", "npm": "@nestjs/core", "docs": "https://nestjs.com", "use_case": "企业级Node后端" },
+        { "name": "Fastify", "version": "4.x", "language": "Node.js", "npm": "fastify", "docs": "https://fastify.dev", "use_case": "高性能Node" },
+        { "name": "Hono", "version": "4.x", "language": "TS", "npm": "hono", "docs": "https://hono.dev", "use_case": "边缘/Serverless" },
+        { "name": "Django", "version": "5.x", "language": "Python", "pip": "django", "docs": "https://djangoproject.com", "use_case": "Python全功能" },
+        { "name": "FastAPI", "version": "0.110+", "language": "Python", "pip": "fastapi", "docs": "https://fastapi.tiangolo.com", "use_case": "Python高性能API" },
+        { "name": "Flask", "version": "3.x", "language": "Python", "pip": "flask", "use_case": "Python轻量" },
+        { "name": "Gin", "version": "1.10+", "language": "Go", "module": "github.com/gin-gonic/gin", "use_case": "Go高性能" },
+        { "name": "Fiber", "version": "2.x", "language": "Go", "module": "github.com/gofiber/fiber", "use_case": "Go Express风格" },
+        { "name": "Actix-web", "version": "4.x", "language": "Rust", "crate": "actix-web", "use_case": "Rust极致性能" },
+        { "name": "Axum", "version": "0.7+", "language": "Rust", "crate": "axum", "use_case": "Rust Tokio生态" }
+      ]
+    },
+    "orm_database": {
+      "description": "ORM / 数据访问",
+      "tools": [
+        { "name": "MyBatis-Plus", "language": "Java", "use_case": "国内Java ORM首选" },
+        { "name": "JPA/Hibernate", "language": "Java", "use_case": "标准JPA" },
+        { "name": "Prisma", "language": "Node.js/TS", "npm": "prisma", "use_case": "类型安全ORM(首选)" },
+        { "name": "Drizzle ORM", "language": "TS", "npm": "drizzle-orm", "use_case": "轻量TS ORM" },
+        { "name": "TypeORM", "language": "TS", "npm": "typeorm", "use_case": "全功能TS ORM" },
+        { "name": "SQLAlchemy", "language": "Python", "pip": "sqlalchemy", "use_case": "Python ORM标准" },
+        { "name": "Django ORM", "language": "Python", "use_case": "Django内置" },
+        { "name": "GORM", "language": "Go", "module": "gorm.io/gorm", "use_case": "Go ORM" }
+      ]
+    },
+    "auth": {
+      "description": "认证授权",
+      "tools": [
+        { "name": "Spring Security", "language": "Java", "use_case": "Java认证授权" },
+        { "name": "Sa-Token", "language": "Java", "use_case": "国内轻量认证" },
+        { "name": "Passport.js", "language": "Node.js", "npm": "passport", "use_case": "Node多策略认证" },
+        { "name": "NextAuth / Auth.js", "language": "TS", "npm": "next-auth", "use_case": "Next.js认证" },
+        { "name": "JWT", "use_case": "无状态Token" },
+        { "name": "OAuth 2.0 / OIDC", "use_case": "第三方登录" },
+        { "name": "Keycloak", "use_case": "企业级IAM" }
+      ]
+    },
+    "cache_mq": {
+      "description": "缓存与消息队列",
+      "tools": [
+        { "name": "Redis", "check_cmd": "redis-cli", "use_case": "缓存/Session/限流" },
+        { "name": "RabbitMQ", "use_case": "消息队列(通用)" },
+        { "name": "Kafka", "use_case": "大规模流处理" },
+        { "name": "Bull/BullMQ", "npm": "bullmq", "use_case": "Node.js任务队列" }
+      ]
+    },
+    "api_tools": {
+      "description": "API 开发工具",
+      "tools": [
+        { "name": "Swagger/OpenAPI", "use_case": "API文档" },
+        { "name": "Knife4j", "language": "Java", "use_case": "增强Swagger(国内)" },
+        { "name": "Postman", "check_cmd": "postman", "use_case": "API调试" },
+        { "name": "Insomnia", "use_case": "API调试(轻量)" },
+        { "name": "httpie", "check_cmd": "http", "use_case": "命令行HTTP" }
+      ]
+    },
+    "testing": {
+      "description": "测试工具",
+      "tools": [
+        { "name": "JUnit 5", "language": "Java", "use_case": "Java单元测试" },
+        { "name": "Mockito", "language": "Java", "use_case": "Java Mock" },
+        { "name": "Testcontainers", "language": "Java/Node", "use_case": "集成测试容器" },
+        { "name": "Vitest", "language": "TS", "npm": "vitest", "use_case": "Node单元测试" },
+        { "name": "Supertest", "language": "Node", "npm": "supertest", "use_case": "HTTP集成测试" },
+        { "name": "pytest", "language": "Python", "pip": "pytest", "use_case": "Python测试" }
+      ]
+    },
+    "observability": {
+      "description": "可观测性",
+      "tools": [
+        { "name": "Prometheus", "use_case": "指标采集" },
+        { "name": "Grafana", "use_case": "监控面板" },
+        { "name": "ELK Stack", "use_case": "日志分析" },
+        { "name": "Jaeger/Zipkin", "use_case": "分布式追踪" },
+        { "name": "Sentry", "use_case": "错误追踪" },
+        { "name": "OpenTelemetry", "use_case": "统一观测标准" }
+      ]
+    }
+  }
+}

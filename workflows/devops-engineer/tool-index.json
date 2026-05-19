@@ -1,0 +1,81 @@
+{
+  "version": "1.0.0",
+  "workflow": "devops-engineer",
+  "last_updated": "2026-05-19",
+  "categories": {
+    "container": {
+      "description": "容器化",
+      "tools": [
+        { "name": "Docker", "check_cmd": "docker", "docs": "https://docs.docker.com", "use_case": "容器运行时" },
+        { "name": "Docker Compose", "check_cmd": "docker compose", "docs": "https://docs.docker.com/compose", "use_case": "本地多容器编排" },
+        { "name": "Podman", "check_cmd": "podman", "use_case": "无守护进程容器" },
+        { "name": "BuildKit", "use_case": "高效镜像构建" }
+      ]
+    },
+    "orchestration": {
+      "description": "编排调度",
+      "tools": [
+        { "name": "Kubernetes", "check_cmd": "kubectl", "docs": "https://kubernetes.io", "use_case": "容器编排" },
+        { "name": "Helm", "check_cmd": "helm", "use_case": "K8s 包管理" },
+        { "name": "k3s", "use_case": "轻量K8s(开发/边缘)" },
+        { "name": "Docker Swarm", "use_case": "简单编排" }
+      ]
+    },
+    "ci_cd": {
+      "description": "持续集成/持续部署",
+      "tools": [
+        { "name": "GitHub Actions", "docs": "https://docs.github.com/actions", "use_case": "GitHub CI/CD(首选)" },
+        { "name": "GitLab CI", "docs": "https://docs.gitlab.com/ee/ci", "use_case": "GitLab CI/CD" },
+        { "name": "Jenkins", "check_cmd": "jenkins", "use_case": "老牌自建CI" },
+        { "name": "ArgoCD", "use_case": "GitOps K8s 部署" },
+        { "name": "Drone CI", "use_case": "轻量容器CI" }
+      ]
+    },
+    "iac": {
+      "description": "基础设施即代码",
+      "tools": [
+        { "name": "Terraform", "check_cmd": "terraform", "docs": "https://terraform.io", "use_case": "多云IaC(首选)" },
+        { "name": "Pulumi", "check_cmd": "pulumi", "use_case": "编程语言写IaC" },
+        { "name": "Ansible", "check_cmd": "ansible", "use_case": "配置管理" },
+        { "name": "AWS CDK", "use_case": "AWS IaC(TS/Python)" },
+        { "name": "Bicep", "use_case": "Azure IaC" }
+      ]
+    },
+    "web_server": {
+      "description": "Web服务器/反向代理",
+      "tools": [
+        { "name": "Nginx", "check_cmd": "nginx", "use_case": "反向代理/静态文件(首选)" },
+        { "name": "Caddy", "check_cmd": "caddy", "use_case": "自动HTTPS/简单配置" },
+        { "name": "Traefik", "use_case": "容器化反向代理" }
+      ]
+    },
+    "registry": {
+      "description": "镜像/包仓库",
+      "tools": [
+        { "name": "Docker Hub", "use_case": "公共镜像仓库" },
+        { "name": "GitHub Container Registry", "use_case": "GitHub镜像仓库" },
+        { "name": "Harbor", "use_case": "私有镜像仓库" },
+        { "name": "Nexus", "use_case": "多格式私有仓库" }
+      ]
+    },
+    "cloud_cli": {
+      "description": "云平台CLI",
+      "tools": [
+        { "name": "AWS CLI", "check_cmd": "aws", "use_case": "AWS操作" },
+        { "name": "Azure CLI", "check_cmd": "az", "use_case": "Azure操作" },
+        { "name": "阿里云CLI", "check_cmd": "aliyun", "use_case": "阿里云操作" },
+        { "name": "腾讯云CLI", "check_cmd": "tccli", "use_case": "腾讯云操作" },
+        { "name": "GitHub CLI", "check_cmd": "gh", "use_case": "GitHub操作" }
+      ]
+    },
+    "monitoring": {
+      "description": "监控告警",
+      "tools": [
+        { "name": "Prometheus", "use_case": "指标采集" },
+        { "name": "Grafana", "use_case": "可视化面板" },
+        { "name": "AlertManager", "use_case": "告警路由" },
+        { "name": "Datadog", "use_case": "SaaS全栈监控" }
+      ]
+    }
+  }
+}

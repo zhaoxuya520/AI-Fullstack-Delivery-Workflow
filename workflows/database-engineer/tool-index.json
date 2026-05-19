@@ -1,0 +1,56 @@
+{
+  "version": "1.0.0",
+  "workflow": "database-engineer",
+  "last_updated": "2026-05-19",
+  "categories": {
+    "rdbms": {
+      "description": "关系型数据库",
+      "tools": [
+        { "name": "PostgreSQL", "check_cmd": "psql", "version": "16+", "docs": "https://postgresql.org", "use_case": "通用首选/功能最全" },
+        { "name": "MySQL", "check_cmd": "mysql", "version": "8.0+", "docs": "https://dev.mysql.com", "use_case": "Web应用主流/国内多" },
+        { "name": "MariaDB", "check_cmd": "mariadb", "use_case": "MySQL兼容替代" },
+        { "name": "SQL Server", "use_case": "Microsoft生态" },
+        { "name": "SQLite", "check_cmd": "sqlite3", "use_case": "嵌入式/开发/移动端" }
+      ]
+    },
+    "nosql": {
+      "description": "非关系型数据库",
+      "tools": [
+        { "name": "MongoDB", "check_cmd": "mongosh", "use_case": "文档型/灵活schema" },
+        { "name": "Redis", "check_cmd": "redis-cli", "use_case": "缓存/Session/队列" },
+        { "name": "Elasticsearch", "use_case": "全文搜索/日志" },
+        { "name": "DynamoDB", "use_case": "AWS KV/Serverless" }
+      ]
+    },
+    "migration": {
+      "description": "数据库迁移工具",
+      "tools": [
+        { "name": "Flyway", "check_cmd": "flyway", "use_case": "Java生态迁移(首选)" },
+        { "name": "Liquibase", "check_cmd": "liquibase", "use_case": "XML/YAML迁移" },
+        { "name": "Prisma Migrate", "use_case": "Node.js/TS迁移" },
+        { "name": "Alembic", "use_case": "Python/SQLAlchemy迁移" },
+        { "name": "Django Migrations", "use_case": "Django内置" },
+        { "name": "golang-migrate", "check_cmd": "migrate", "use_case": "Go迁移" }
+      ]
+    },
+    "gui": {
+      "description": "数据库GUI工具",
+      "tools": [
+        { "name": "DBeaver", "check_cmd": "dbeaver", "use_case": "通用免费GUI(首选)" },
+        { "name": "DataGrip", "use_case": "JetBrains付费" },
+        { "name": "Navicat", "use_case": "国内常用付费" },
+        { "name": "pgAdmin", "use_case": "PostgreSQL专用" },
+        { "name": "MySQL Workbench", "use_case": "MySQL专用" }
+      ]
+    },
+    "performance": {
+      "description": "性能分析",
+      "tools": [
+        { "name": "EXPLAIN ANALYZE", "use_case": "SQL执行计划" },
+        { "name": "pg_stat_statements", "use_case": "PG慢查询" },
+        { "name": "pt-query-digest", "use_case": "MySQL慢查询分析" },
+        { "name": "pgbadger", "use_case": "PG日志分析" }
+      ]
+    }
+  }
+}

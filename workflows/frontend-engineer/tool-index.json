@@ -1,0 +1,115 @@
+{
+  "version": "1.0.0",
+  "workflow": "frontend-engineer",
+  "last_updated": "2026-05-19",
+  "categories": {
+    "framework": {
+      "description": "前端框架",
+      "tools": [
+        { "name": "React", "version": "19.x", "npm": "react", "docs": "https://react.dev", "use_case": "企业级SaaS/复杂SPA" },
+        { "name": "Vue 3", "version": "3.5+", "npm": "vue", "docs": "https://vuejs.org", "use_case": "国内项目/中小团队" },
+        { "name": "Angular", "version": "18.x", "npm": "@angular/core", "docs": "https://angular.dev", "use_case": "大企业ERP/CRM" },
+        { "name": "Svelte", "version": "5.x", "npm": "svelte", "docs": "https://svelte.dev", "use_case": "性能敏感/初学者" },
+        { "name": "Solid.js", "version": "1.9+", "npm": "solid-js", "docs": "https://solidjs.com", "use_case": "极致性能" }
+      ]
+    },
+    "meta_framework": {
+      "description": "元框架（SSR/SSG）",
+      "tools": [
+        { "name": "Next.js", "version": "15.x", "npm": "next", "docs": "https://nextjs.org", "use_case": "React SSR/SSG/ISR" },
+        { "name": "Nuxt 3", "version": "3.x", "npm": "nuxt", "docs": "https://nuxt.com", "use_case": "Vue SSR/SSG" },
+        { "name": "SvelteKit", "version": "2.x", "npm": "@sveltejs/kit", "docs": "https://kit.svelte.dev", "use_case": "Svelte SSR" },
+        { "name": "Astro", "version": "4.x", "npm": "astro", "docs": "https://astro.build", "use_case": "内容站点/博客" },
+        { "name": "Remix", "version": "2.x", "npm": "@remix-run/react", "docs": "https://remix.run", "use_case": "React全栈" }
+      ]
+    },
+    "component_library": {
+      "description": "组件库",
+      "tools": [
+        { "name": "Ant Design", "version": "5.x", "npm": "antd", "framework": "React", "use_case": "企业后台" },
+        { "name": "Material UI", "version": "6.x", "npm": "@mui/material", "framework": "React", "use_case": "Material Design" },
+        { "name": "shadcn/ui", "version": "latest", "npm": "shadcn-ui", "framework": "React", "use_case": "可定制/Tailwind" },
+        { "name": "Radix UI", "version": "latest", "npm": "@radix-ui/react-dialog", "framework": "React", "use_case": "Headless无样式" },
+        { "name": "Element Plus", "version": "2.x", "npm": "element-plus", "framework": "Vue 3", "use_case": "企业后台(国内)" },
+        { "name": "Naive UI", "version": "2.x", "npm": "naive-ui", "framework": "Vue 3", "use_case": "高质量Vue组件" },
+        { "name": "Vuetify", "version": "3.x", "npm": "vuetify", "framework": "Vue 3", "use_case": "Material Design" },
+        { "name": "Arco Design Vue", "version": "2.x", "npm": "@arco-design/web-vue", "framework": "Vue 3", "use_case": "字节跳动风格" },
+        { "name": "TDesign", "version": "1.x", "npm": "tdesign-vue-next", "framework": "Vue 3", "use_case": "腾讯风格" },
+        { "name": "Angular Material", "version": "18.x", "npm": "@angular/material", "framework": "Angular", "use_case": "Angular官方" },
+        { "name": "NG-ZORRO", "version": "18.x", "npm": "ng-zorro-antd", "framework": "Angular", "use_case": "Angular+AntD" },
+        { "name": "PrimeNG", "version": "17.x", "npm": "primeng", "framework": "Angular", "use_case": "企业级Angular" }
+      ]
+    },
+    "state_management": {
+      "description": "状态管理",
+      "tools": [
+        { "name": "Zustand", "npm": "zustand", "framework": "React", "use_case": "轻量/首选" },
+        { "name": "Jotai", "npm": "jotai", "framework": "React", "use_case": "原子状态" },
+        { "name": "Redux Toolkit", "npm": "@reduxjs/toolkit", "framework": "React", "use_case": "复杂全局状态" },
+        { "name": "TanStack Query", "npm": "@tanstack/react-query", "framework": "React/Vue", "use_case": "服务端状态" },
+        { "name": "Pinia", "npm": "pinia", "framework": "Vue 3", "use_case": "Vue官方状态库" },
+        { "name": "NgRx", "npm": "@ngrx/store", "framework": "Angular", "use_case": "Angular Redux" }
+      ]
+    },
+    "styling": {
+      "description": "样式方案",
+      "tools": [
+        { "name": "Tailwind CSS", "version": "4.x", "npm": "tailwindcss", "use_case": "原子化/首选" },
+        { "name": "UnoCSS", "npm": "unocss", "use_case": "按需原子化" },
+        { "name": "CSS Modules", "npm": "内置", "use_case": "局部作用域" },
+        { "name": "styled-components", "npm": "styled-components", "use_case": "CSS-in-JS(React)" },
+        { "name": "vanilla-extract", "npm": "@vanilla-extract/css", "use_case": "零运行时CSS-in-TS" }
+      ]
+    },
+    "build_tool": {
+      "description": "构建工具",
+      "tools": [
+        { "name": "Vite", "version": "6.x", "npm": "vite", "use_case": "首选/通用" },
+        { "name": "Turbopack", "npm": "next内置", "use_case": "Next.js" },
+        { "name": "Webpack", "version": "5.x", "npm": "webpack", "use_case": "遗留项目" },
+        { "name": "esbuild", "npm": "esbuild", "use_case": "极快打包" },
+        { "name": "Rollup", "npm": "rollup", "use_case": "库打包" }
+      ]
+    },
+    "testing": {
+      "description": "测试工具",
+      "tools": [
+        { "name": "Vitest", "npm": "vitest", "use_case": "单元/集成测试(首选)" },
+        { "name": "Jest", "npm": "jest", "use_case": "单元测试(遗留)" },
+        { "name": "Playwright", "npm": "@playwright/test", "use_case": "E2E测试(首选)" },
+        { "name": "Cypress", "npm": "cypress", "use_case": "E2E测试(备选)" },
+        { "name": "Testing Library", "npm": "@testing-library/react", "use_case": "组件测试" },
+        { "name": "MSW", "npm": "msw", "use_case": "API Mock" },
+        { "name": "Storybook", "npm": "storybook", "use_case": "组件文档+视觉测试" }
+      ]
+    },
+    "miniprogram": {
+      "description": "小程序开发",
+      "tools": [
+        { "name": "Taro", "version": "3.x", "npm": "@tarojs/cli", "use_case": "多端统一(微信/支付宝/H5)" },
+        { "name": "uni-app", "npm": "@dcloudio/uni-app", "use_case": "多端统一(Vue生态)" },
+        { "name": "微信开发者工具", "check_cmd": "微信开发者工具", "use_case": "微信小程序调试" }
+      ]
+    },
+    "mobile": {
+      "description": "移动端跨平台",
+      "tools": [
+        { "name": "React Native", "npm": "react-native", "use_case": "React跨端APP" },
+        { "name": "Flutter", "check_cmd": "flutter", "use_case": "高性能跨端APP" },
+        { "name": "Expo", "npm": "expo", "use_case": "React Native快速开发" },
+        { "name": "Ionic", "npm": "@ionic/react", "use_case": "Web技术做APP" }
+      ]
+    },
+    "lint_format": {
+      "description": "代码质量",
+      "tools": [
+        { "name": "ESLint", "npm": "eslint", "use_case": "JS/TS代码检查" },
+        { "name": "Prettier", "npm": "prettier", "use_case": "代码格式化" },
+        { "name": "Stylelint", "npm": "stylelint", "use_case": "CSS检查" },
+        { "name": "commitlint", "npm": "@commitlint/cli", "use_case": "提交信息规范" },
+        { "name": "husky", "npm": "husky", "use_case": "Git Hooks" },
+        { "name": "lint-staged", "npm": "lint-staged", "use_case": "暂存区检查" }
+      ]
+    }
+  }
+}

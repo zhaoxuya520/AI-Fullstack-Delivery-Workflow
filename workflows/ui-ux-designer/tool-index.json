@@ -1,0 +1,69 @@
+{
+  "version": "1.0.0",
+  "workflow": "ui-ux-designer",
+  "last_updated": "2026-05-19",
+  "categories": {
+    "design": {
+      "description": "设计工具",
+      "tools": [
+        { "name": "Figma", "docs": "https://figma.com", "use_case": "UI设计+原型+协作(首选)" },
+        { "name": "Sketch", "use_case": "macOS UI设计" },
+        { "name": "Adobe XD", "use_case": "Adobe生态" },
+        { "name": "Penpot", "docs": "https://penpot.app", "use_case": "开源设计工具" }
+      ]
+    },
+    "prototype": {
+      "description": "原型交互",
+      "tools": [
+        { "name": "Figma Prototype", "use_case": "Figma内置原型" },
+        { "name": "ProtoPie", "use_case": "高保真交互原型" },
+        { "name": "Framer", "use_case": "代码级原型" },
+        { "name": "Principle", "use_case": "动效原型(macOS)" }
+      ]
+    },
+    "design_system": {
+      "description": "设计系统管理",
+      "tools": [
+        { "name": "Figma Variables", "use_case": "Design Token管理" },
+        { "name": "Storybook", "npm": "storybook", "use_case": "组件文档+测试" },
+        { "name": "Style Dictionary", "npm": "style-dictionary", "use_case": "Token转代码" },
+        { "name": "Tokens Studio", "use_case": "Figma Token插件" }
+      ]
+    },
+    "handoff": {
+      "description": "设计交付",
+      "tools": [
+        { "name": "Figma Dev Mode", "use_case": "开发者模式(首选)" },
+        { "name": "Zeplin", "use_case": "设计标注" },
+        { "name": "蓝湖", "use_case": "国内设计交付" }
+      ]
+    },
+    "user_research": {
+      "description": "用户研究",
+      "tools": [
+        { "name": "Maze", "use_case": "可用性测试" },
+        { "name": "Hotjar", "use_case": "热力图+录屏" },
+        { "name": "UserTesting", "use_case": "远程用户测试" },
+        { "name": "Optimal Workshop", "use_case": "信息架构测试" }
+      ]
+    },
+    "accessibility": {
+      "description": "无障碍设计",
+      "tools": [
+        { "name": "Stark (Figma插件)", "use_case": "对比度+a11y检查" },
+        { "name": "Color Oracle", "use_case": "色盲模拟" },
+        { "name": "Contrast Checker", "use_case": "WCAG对比度计算" }
+      ]
+    },
+    "illustration": {
+      "description": "素材与插画",
+      "tools": [
+        { "name": "unDraw", "use_case": "免费SVG插画" },
+        { "name": "Humaaans", "use_case": "人物插画" },
+        { "name": "Iconify", "use_case": "图标集合" },
+        { "name": "Lucide", "use_case": "开源图标库" },
+        { "name": "Heroicons", "use_case": "Tailwind图标" }
+      ]
+    }
+  }
+}

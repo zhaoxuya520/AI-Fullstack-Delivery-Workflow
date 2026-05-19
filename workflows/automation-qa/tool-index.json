@@ -1,0 +1,73 @@
+{
+  "version": "1.0.0",
+  "workflow": "automation-qa",
+  "last_updated": "2026-05-19",
+  "categories": {
+    "unit_test": {
+      "description": "单元测试",
+      "tools": [
+        { "name": "Vitest", "npm": "vitest", "language": "TS/JS", "use_case": "Vite生态首选" },
+        { "name": "Jest", "npm": "jest", "language": "TS/JS", "use_case": "老牌通用" },
+        { "name": "JUnit 5", "language": "Java", "use_case": "Java标准" },
+        { "name": "pytest", "pip": "pytest", "language": "Python", "use_case": "Python标准" },
+        { "name": "Go testing", "language": "Go", "use_case": "Go内置" }
+      ]
+    },
+    "e2e": {
+      "description": "端到端测试",
+      "tools": [
+        { "name": "Playwright", "npm": "@playwright/test", "use_case": "E2E首选(多浏览器)" },
+        { "name": "Cypress", "npm": "cypress", "use_case": "E2E备选(开发体验好)" },
+        { "name": "Selenium", "use_case": "老牌E2E(Java生态)" },
+        { "name": "Puppeteer", "npm": "puppeteer", "use_case": "Chrome Only" }
+      ]
+    },
+    "api_test": {
+      "description": "API测试",
+      "tools": [
+        { "name": "Supertest", "npm": "supertest", "use_case": "Node HTTP集成测试" },
+        { "name": "REST Assured", "language": "Java", "use_case": "Java API测试" },
+        { "name": "httpx (pytest)", "pip": "httpx", "use_case": "Python API测试" },
+        { "name": "Pact", "npm": "@pact-foundation/pact", "use_case": "契约测试" }
+      ]
+    },
+    "mock": {
+      "description": "Mock工具",
+      "tools": [
+        { "name": "MSW", "npm": "msw", "use_case": "浏览器+Node Mock(首选)" },
+        { "name": "Mockito", "language": "Java", "use_case": "Java Mock" },
+        { "name": "unittest.mock", "language": "Python", "use_case": "Python内置" },
+        { "name": "nock", "npm": "nock", "use_case": "Node HTTP Mock" },
+        { "name": "Testcontainers", "use_case": "真实依赖容器化" }
+      ]
+    },
+    "performance": {
+      "description": "性能测试",
+      "tools": [
+        { "name": "k6", "check_cmd": "k6", "docs": "https://k6.io", "use_case": "负载测试(首选)" },
+        { "name": "Artillery", "npm": "artillery", "use_case": "Node负载测试" },
+        { "name": "JMeter", "use_case": "Java生态负载测试" },
+        { "name": "Locust", "pip": "locust", "use_case": "Python负载测试" }
+      ]
+    },
+    "visual": {
+      "description": "视觉回归",
+      "tools": [
+        { "name": "Playwright (screenshot)", "use_case": "截图对比" },
+        { "name": "Chromatic", "use_case": "Storybook视觉测试" },
+        { "name": "Percy", "use_case": "视觉回归平台" },
+        { "name": "BackstopJS", "npm": "backstopjs", "use_case": "开源视觉回归" }
+      ]
+    },
+    "coverage": {
+      "description": "覆盖率",
+      "tools": [
+        { "name": "Vitest (c8/v8)", "use_case": "TS/JS覆盖率" },
+        { "name": "Istanbul/nyc", "npm": "nyc", "use_case": "Node覆盖率" },
+        { "name": "JaCoCo", "language": "Java", "use_case": "Java覆盖率" },
+        { "name": "coverage.py", "pip": "coverage", "use_case": "Python覆盖率" },
+        { "name": "Codecov", "use_case": "覆盖率报告平台" }
+      ]
+    }
+  }
+}

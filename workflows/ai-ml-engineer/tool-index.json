@@ -1,0 +1,69 @@
+{
+  "version": "1.0.0",
+  "workflow": "ai-ml-engineer",
+  "last_updated": "2026-05-19",
+  "description": "面向产品中集成AI能力（调API/RAG/Agent），不做模型训练",
+  "categories": {
+    "llm_api": {
+      "description": "LLM API 提供商",
+      "tools": [
+        { "name": "OpenAI", "pip": "openai", "docs": "https://platform.openai.com", "use_case": "GPT-4o/GPT-4o-mini" },
+        { "name": "Anthropic", "pip": "anthropic", "docs": "https://docs.anthropic.com", "use_case": "Claude Opus/Sonnet/Haiku" },
+        { "name": "Google Gemini", "pip": "google-generativeai", "docs": "https://ai.google.dev", "use_case": "Gemini 长上下文" },
+        { "name": "DeepSeek", "docs": "https://platform.deepseek.com", "use_case": "国产高性价比" },
+        { "name": "通义千问", "docs": "https://dashscope.aliyun.com", "use_case": "阿里云LLM" },
+        { "name": "豆包/火山引擎", "docs": "https://www.volcengine.com/docs/82379", "use_case": "字节跳动LLM" },
+        { "name": "Ollama", "check_cmd": "ollama", "use_case": "本地模型运行" }
+      ]
+    },
+    "framework": {
+      "description": "AI编排框架",
+      "tools": [
+        { "name": "LangChain", "pip": "langchain", "use_case": "Chain/Agent/Tool编排" },
+        { "name": "LlamaIndex", "pip": "llama-index", "use_case": "RAG/知识库" },
+        { "name": "Vercel AI SDK", "npm": "ai", "use_case": "Next.js AI集成" },
+        { "name": "Semantic Kernel", "use_case": ".NET/Python Agent" },
+        { "name": "CrewAI", "pip": "crewai", "use_case": "多Agent协作" },
+        { "name": "Dify", "docs": "https://dify.ai", "use_case": "低代码AI应用平台" }
+      ]
+    },
+    "vector_db": {
+      "description": "向量数据库",
+      "tools": [
+        { "name": "Qdrant", "docs": "https://qdrant.tech", "use_case": "开源高性能(首选)" },
+        { "name": "Pinecone", "docs": "https://pinecone.io", "use_case": "托管SaaS" },
+        { "name": "Weaviate", "docs": "https://weaviate.io", "use_case": "混合搜索" },
+        { "name": "pgvector", "use_case": "PostgreSQL扩展(已有PG时)" },
+        { "name": "ChromaDB", "pip": "chromadb", "use_case": "原型验证/轻量" },
+        { "name": "Milvus", "docs": "https://milvus.io", "use_case": "大规模分布式" }
+      ]
+    },
+    "observability": {
+      "description": "AI可观测性",
+      "tools": [
+        { "name": "LangSmith", "docs": "https://smith.langchain.com", "use_case": "LangChain追踪+评估" },
+        { "name": "Langfuse", "docs": "https://langfuse.com", "use_case": "开源LLM追踪" },
+        { "name": "Helicone", "docs": "https://helicone.ai", "use_case": "代理层日志+缓存" },
+        { "name": "Promptfoo", "npm": "promptfoo", "use_case": "Prompt A/B测试" }
+      ]
+    },
+    "document_parsing": {
+      "description": "文档解析",
+      "tools": [
+        { "name": "Unstructured", "pip": "unstructured", "use_case": "PDF/DOCX/HTML解析" },
+        { "name": "LlamaParse", "use_case": "高质量PDF(表格/图片)" },
+        { "name": "PyMuPDF", "pip": "pymupdf", "use_case": "快速PDF提取" },
+        { "name": "MarkItDown", "pip": "markitdown", "use_case": "Office转Markdown" }
+      ]
+    },
+    "embedding": {
+      "description": "Embedding模型",
+      "tools": [
+        { "name": "OpenAI text-embedding-3", "use_case": "通用首选" },
+        { "name": "BGE-M3", "use_case": "中文+多语言(本地)" },
+        { "name": "Cohere embed-v3", "use_case": "多语言" },
+        { "name": "Jina embeddings v3", "use_case": "长文本8192" }
+      ]
+    }
+  }
+}

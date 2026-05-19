@@ -1,0 +1,65 @@
+{
+  "version": "1.0.0",
+  "workflow": "sre-operations",
+  "last_updated": "2026-05-19",
+  "categories": {
+    "monitoring": {
+      "description": "监控系统",
+      "tools": [
+        { "name": "Prometheus", "docs": "https://prometheus.io", "use_case": "指标采集(首选)" },
+        { "name": "Grafana", "docs": "https://grafana.com", "use_case": "可视化面板(首选)" },
+        { "name": "AlertManager", "use_case": "告警路由+去重" },
+        { "name": "VictoriaMetrics", "use_case": "高性能Prometheus替代" },
+        { "name": "Datadog", "use_case": "SaaS全栈监控" },
+        { "name": "Zabbix", "use_case": "传统监控" }
+      ]
+    },
+    "logging": {
+      "description": "日志系统",
+      "tools": [
+        { "name": "Elasticsearch + Kibana", "use_case": "ELK日志分析" },
+        { "name": "Loki + Grafana", "use_case": "轻量日志(K8s首选)" },
+        { "name": "Fluentd/Fluent Bit", "use_case": "日志收集" },
+        { "name": "Vector", "use_case": "高性能日志管道" }
+      ]
+    },
+    "tracing": {
+      "description": "分布式追踪",
+      "tools": [
+        { "name": "OpenTelemetry", "docs": "https://opentelemetry.io", "use_case": "统一观测标准(首选)" },
+        { "name": "Jaeger", "use_case": "分布式追踪" },
+        { "name": "Zipkin", "use_case": "分布式追踪(轻量)" },
+        { "name": "Tempo", "use_case": "Grafana追踪后端" }
+      ]
+    },
+    "incident": {
+      "description": "事故响应",
+      "tools": [
+        { "name": "PagerDuty", "use_case": "On-call调度" },
+        { "name": "OpsGenie", "use_case": "告警管理" },
+        { "name": "Statuspage", "use_case": "状态页面" },
+        { "name": "Incident.io", "use_case": "事故管理SaaS" }
+      ]
+    },
+    "reliability": {
+      "description": "可靠性工程",
+      "tools": [
+        { "name": "Chaos Monkey", "use_case": "混沌工程(Netflix)" },
+        { "name": "Litmus", "use_case": "K8s混沌测试" },
+        { "name": "Gremlin", "use_case": "混沌工程SaaS" },
+        { "name": "k6", "check_cmd": "k6", "use_case": "负载测试" }
+      ]
+    },
+    "cli": {
+      "description": "运维CLI",
+      "tools": [
+        { "name": "kubectl", "check_cmd": "kubectl", "use_case": "K8s操作" },
+        { "name": "k9s", "check_cmd": "k9s", "use_case": "K8s终端UI" },
+        { "name": "stern", "check_cmd": "stern", "use_case": "K8s多Pod日志" },
+        { "name": "jq", "check_cmd": "jq", "use_case": "JSON处理" },
+        { "name": "curl", "check_cmd": "curl", "use_case": "HTTP调试" },
+        { "name": "htop/btop", "use_case": "系统资源监控" }
+      ]
+    }
+  }
+}

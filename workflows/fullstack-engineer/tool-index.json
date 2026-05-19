@@ -1,0 +1,50 @@
+{
+  "version": "1.0.0",
+  "workflow": "fullstack-engineer",
+  "last_updated": "2026-05-19",
+  "description": "全栈工程师=前端+后端+数据库的交集，选型见各专项工作流 tool-index.json",
+  "categories": {
+    "fullstack_framework": {
+      "description": "全栈框架(前后端一体)",
+      "tools": [
+        { "name": "Next.js", "npm": "next", "use_case": "React全栈(首选)" },
+        { "name": "Nuxt 3", "npm": "nuxt", "use_case": "Vue全栈" },
+        { "name": "SvelteKit", "npm": "@sveltejs/kit", "use_case": "Svelte全栈" },
+        { "name": "Remix", "npm": "@remix-run/react", "use_case": "React全栈(Loader模式)" },
+        { "name": "T3 Stack", "use_case": "Next.js+tRPC+Prisma+Tailwind" },
+        { "name": "Django + Templates/DRF", "use_case": "Python全栈" },
+        { "name": "Rails", "use_case": "Ruby全栈" },
+        { "name": "Laravel + Livewire/Inertia", "use_case": "PHP全栈" }
+      ]
+    },
+    "baas": {
+      "description": "Backend-as-a-Service",
+      "tools": [
+        { "name": "Supabase", "docs": "https://supabase.com", "use_case": "开源Firebase替代(首选)" },
+        { "name": "Firebase", "docs": "https://firebase.google.com", "use_case": "Google BaaS" },
+        { "name": "Appwrite", "docs": "https://appwrite.io", "use_case": "开源BaaS" },
+        { "name": "Convex", "docs": "https://convex.dev", "use_case": "实时后端" },
+        { "name": "PocketBase", "use_case": "单文件BaaS" }
+      ]
+    },
+    "type_safe_api": {
+      "description": "类型安全API层",
+      "tools": [
+        { "name": "tRPC", "npm": "@trpc/server", "use_case": "TS端到端类型安全" },
+        { "name": "Prisma", "npm": "prisma", "use_case": "类型安全ORM" },
+        { "name": "Drizzle ORM", "npm": "drizzle-orm", "use_case": "轻量TS ORM" },
+        { "name": "Zod", "npm": "zod", "use_case": "运行时类型校验" }
+      ]
+    },
+    "deployment": {
+      "description": "全栈部署",
+      "tools": [
+        { "name": "Vercel", "docs": "https://vercel.com", "use_case": "Next.js部署(首选)" },
+        { "name": "Netlify", "docs": "https://netlify.com", "use_case": "前端+Serverless" },
+        { "name": "Railway", "docs": "https://railway.app", "use_case": "全栈部署" },
+        { "name": "Fly.io", "docs": "https://fly.io", "use_case": "容器化部署" },
+        { "name": "Docker + VPS", "use_case": "自建部署" }
+      ]
+    }
+  }
+}

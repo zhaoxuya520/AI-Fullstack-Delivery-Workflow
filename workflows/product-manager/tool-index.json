@@ -1,0 +1,53 @@
+{
+  "version": "1.0.0",
+  "workflow": "product-manager",
+  "last_updated": "2026-05-19",
+  "categories": {
+    "documentation": {
+      "description": "需求文档工具",
+      "tools": [
+        { "name": "Notion", "use_case": "PRD/知识库(首选)" },
+        { "name": "飞书文档", "use_case": "国内团队协作" },
+        { "name": "Confluence", "use_case": "Atlassian生态" },
+        { "name": "语雀", "use_case": "阿里系文档" }
+      ]
+    },
+    "prototype": {
+      "description": "原型设计",
+      "tools": [
+        { "name": "Figma", "docs": "https://figma.com", "use_case": "设计+原型(首选)" },
+        { "name": "Axure", "use_case": "高保真原型" },
+        { "name": "墨刀", "use_case": "国内快速原型" },
+        { "name": "Whimsical", "use_case": "流程图+线框" }
+      ]
+    },
+    "analytics": {
+      "description": "数据分析",
+      "tools": [
+        { "name": "Google Analytics", "use_case": "Web流量分析" },
+        { "name": "Mixpanel", "use_case": "用户行为分析" },
+        { "name": "Amplitude", "use_case": "产品分析" },
+        { "name": "神策分析", "use_case": "国内用户分析" },
+        { "name": "GrowingIO", "use_case": "国内增长分析" }
+      ]
+    },
+    "project": {
+      "description": "项目跟踪",
+      "tools": [
+        { "name": "Linear", "use_case": "现代项目管理(首选)" },
+        { "name": "Jira", "use_case": "企业级项目管理" },
+        { "name": "飞书项目", "use_case": "国内团队" },
+        { "name": "Trello", "use_case": "看板式轻量" }
+      ]
+    },
+    "user_research": {
+      "description": "用户研究",
+      "tools": [
+        { "name": "Hotjar", "use_case": "热力图/录屏" },
+        { "name": "Maze", "use_case": "用户测试" },
+        { "name": "UserTesting", "use_case": "远程用户测试" },
+        { "name": "问卷星/腾讯问卷", "use_case": "问卷调研" }
+      ]
+    }
+  }
+}

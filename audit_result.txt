@@ -1,0 +1,15 @@
+﻿python : Traceback (most recent call last):
+所在位置 行:1 字符: 32
++ $env:PYTHONIOENCODING='utf-8'; python -c "
++                                ~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last) 
+   ::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "<string>", line 4, in <module>
+    exec(open('scripts/audit-workflows.py', encoding='utf-8').read().replace('s
+ys.exit(main())', 'main()'))
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 25, in <module>
+NameError: name '__file__' is not defined. Did you mean: '__name__'?
